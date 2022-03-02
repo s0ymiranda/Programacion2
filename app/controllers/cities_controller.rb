@@ -8,10 +8,7 @@ class CitiesController < ApplicationController
 
 
   def show 
-    ciudad = City.find_by_name(@city.name)
-    if !ciudad.nil?
-     @companies = Company.where(city_id: ciudad.id)
-    end
+    @companies = Company.city_name(@city.name)
   end
 
   def new
