@@ -8,10 +8,7 @@ class StatesController < ApplicationController
 
   # GET /states/1 or /states/1.json
   def show
-    estado = State.find_by_name(@state.name)
-    if !estado.nil?
-     @cities = City.where(state_id: estado.id)
-    end
+    @cities = City.state_name(@state.name)
   end
 
   # GET /states/new
