@@ -9,7 +9,7 @@ class City < ApplicationRecord
   def self.state_name(state_name)
     estado = State.find_by_name(state_name)
     if !estado.nil?
-      City.where(state_id: estado.id)
+      @cities = City.where(state_id: estado.id)
     end
   end
 end
