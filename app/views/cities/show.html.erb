@@ -1,0 +1,14 @@
+
+
+<%= render @city %>
+
+    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<%= link_to @city.State.name, states_path,class:"btn btn-link " %>
+   
+
+<br>
+<div class="btn-group" role="group" aria-label="Basic example">
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <%= link_to "Edit this city", edit_city_path(@city),class:"btn btn-secondary " %> 
+  
+  <%= link_to "Back to cities", cities_path,class:"btn btn-secondary " %>
+  <%= button_to "Remove City", @city, method: :delete , class:"btn btn-secondary "%>
+</div>

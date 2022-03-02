@@ -1,0 +1,31 @@
+<table class="table table-success table-striped table-bordered">
+  <thead>
+    <tr>
+     
+      <th scope="col">Company</th>
+      <th scope="col">Rif</th>
+      <th scope="col">Phone</th>
+      <th scope="col">City </th>
+    </tr>
+  </thead>
+  <tbody>
+      <td><%= company.nombre %></td>
+      <td><%= company.rif %></td>
+      <td><%= company.telefono %></td>
+      <td><%= company.City.name %></td>
+      </tbody>
+</table>
+<table class="table table-danger table-striped ">
+  <thead>
+      <th scope="col">Clients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @clients.each do |cliente| %>
+      <tr>
+      <td> <%= cliente.nombre %> </td>
+      </tr>
+   <% end %>
+   </tbody>
+</table>
+

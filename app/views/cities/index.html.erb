@@ -1,0 +1,28 @@
+
+
+<h1>Cities List</h1>
+
+<table class="table table-danger table-striped ">
+  <thead>
+    <tr>
+      <!-- <th scope="col">#</th> -->
+      <th scope="col">City</th>
+      <th scope="col">State</th>
+      <th scope="col">...     </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cities.each do |city| %>
+      <tr>
+      <!--<td> <%= city.id %> </td>-->
+      <td> <%= city.name %> </td>
+      <td> <%= city.State.name %> </td>
+      <td> <%= link_to "See more", city %> </td>
+      </tr>
+   <% end %>
+   </tbody>
+</table>
+
+
+
+    <%= link_to "Add New City", new_city_path, class:"btn btn-secondary" %>

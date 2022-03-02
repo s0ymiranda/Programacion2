@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  persona_juridica: false
+  nro_doc: MyString
+  telefono: MyString
+  Company: one
+
+two:
+  nombre: MyString
+  persona_juridica: false
+  nro_doc: MyString
+  telefono: MyString
+  Company: two

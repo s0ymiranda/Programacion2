@@ -1,0 +1,22 @@
+<table class="table table-success table-striped table-bordered">
+  <thead>
+    <tr>
+     <th scope="col">#Code</th>
+      <th scope="col">Project's Name</th>
+      <th scope="col">Start date</th>
+      <th scope="col">Valor</th>
+      <th scope="col">Description </th>
+      <th scope="col">Belongs to the Client </th>
+      <th scope="col">Current Status </th>
+    </tr>
+  </thead>
+  <tbody>
+      <td><%= project.codigo %></td>
+      <td><%= project.nombre %></td>
+      <td><%= project.fecha_inicio %></td>
+      <td><%= project.valor %></td>
+      <td><%= project.descripcion %></td>
+      <td><%= project.Client.nombre %></td>
+      <td><%= project.Status.nombre %></td>
+      </tbody>
+</table>

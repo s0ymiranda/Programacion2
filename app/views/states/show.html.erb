@@ -1,0 +1,7 @@
+<%= render @state %>
+<div class="btn-group" role="group" aria-label="Basic example">
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <%= link_to "Edit this state", edit_state_path(@state),class:"btn btn-secondary" %> 
+  <%= link_to "Back to states", states_path, class:"btn btn-secondary " %>
+
+  <%= button_to "Remove State", @state, method: :delete, class:"btn btn-secondary " %>
+</div>

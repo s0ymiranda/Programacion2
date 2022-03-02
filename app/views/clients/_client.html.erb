@@ -1,0 +1,38 @@
+<table class="table table-success table-striped table-bordered">
+  <thead>
+    <tr>
+     
+      <th scope="col">Client's Name</th>
+      <th scope="col">Juridic Person</th>
+      <th scope="col">Number doc</th>
+      <th scope="col">Phone </th>
+      <th scope="col">Belongs to the company </th>
+    </tr>
+  </thead>
+  <tbody>
+      <td><%= client.nombre %></td>
+      <td><%= client.persona_juridica %></td>
+      <td><%= client.nro_doc %></td>
+      <td><%= client.telefono %></td>
+      <td><%= client.Company.nombre %></td>
+      </tbody>
+</table>
+<table class="table table-danger table-striped ">
+  <thead>
+      <th scope="col">Projects</th>
+      <th scope="col">Current Status </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+      <td> <%= project.nombre %> </td>
+      <td> <%= project.Status.nombre %> </td>
+      </tr>
+   <% end %>
+   </tbody>
+</table>
+
+
+
+

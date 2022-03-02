@@ -1,0 +1,17 @@
+<div>
+    <p class="fs-1", > <%= city.name %> </p>
+
+<table class="table table-danger table-striped ">
+  <thead>
+      <th scope="col">Companies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @companies.each do |companie| %>
+      <tr>
+      <td> <%= companie.nombre %> </td>
+      </tr>
+   <% end %>
+   </tbody>
+</table>
+</div>
