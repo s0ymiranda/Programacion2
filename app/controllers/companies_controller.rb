@@ -6,10 +6,7 @@ class CompaniesController < ApplicationController
   end
 
   def show
-    compani = Company.find_by_nombre(@company.nombre)
-    if !compani.nil?
-     @clients = Client.where(company_id: compani.id)
-    end
+    @clients = Client.company_name(@company.nombre)
   end
 
   def new
